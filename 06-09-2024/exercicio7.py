@@ -16,14 +16,7 @@ for f in range(3):
 
 matriz = [lista1, lista2, lista3]
 
-print("\nVerificação de números negativos na matriz:")
-encontrou_negativo = False
-
-for i in range(len(matriz)):
-    for j in range(len(matriz[i])):
-        if matriz[i][j] < 0:
-            print(f"Número negativo encontrado na posição ({i+1}, {j+1}): {matriz[i][j]}")
-            encontrou_negativo = True
-
-if not encontrou_negativo:
-    print("Nenhum número negativo encontrado na matriz.")
+if matriz==[[1, 0 ,0], [0, 1, 0], [0, 0, 1]]:
+    print("é uma matriz identidade")
+else:
+    print("não é matriz identidade")
